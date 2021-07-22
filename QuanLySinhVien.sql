@@ -65,10 +65,10 @@ alter TABLE Subjects
 change column `SubjectName` `SubjectName` NVARCHAR(4000);
 
 /*7 Cap nhat them dong chu « Day la mon hoc «  vao truoc cac ban ghi tren cot SubjectName trong bang Subjects*/
-update `test2_csdl_2207`.`Subjects` set `SubjectName` = ' Day la mon hoc SQL' where (`SubjectID` = '1');
-update `test2_csdl_2207`.`Subjects` set `SubjectName` = ' Day la mon hoc Jave' where (`SubjectID` = '2');
-update `test2_csdl_2207`.`Subjects` set `SubjectName` = ' Day la mon hoc C' where (`SubjectID` = '3');
-update `test2_csdl_2207`.`Subjects` set `SubjectName` = ' Day la mon hoc Visual Basic' where (`SubjectID` = '4');
+update Subjects set SubjectName = ' Day la mon hoc SQL' where (SubjectID = '1');
+update Subjects set SubjectName = ' Day la mon hoc Jave' where (SubjectID = '2');
+update Subjects set SubjectName = ' Day la mon hoc C' where (SubjectID = '3');
+update Subjects set SubjectName = ' Day la mon hoc Visual Basic' where (SubjectID = '4');
 
 
 /*8 Viet Check Constraint de kiem tra do tuoi nhap vao trong bang Student yeu cau Age >15 va Age < 50*/
