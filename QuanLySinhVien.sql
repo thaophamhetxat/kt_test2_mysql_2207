@@ -77,12 +77,12 @@ add Check (Age >15 and Age<50);
 
 /*Loai bo tat ca quan he giua cac bang*/
 alter TABLE ClassStudent
-drop foreign key C_StudentID,
-drop foreign key C_ClassID;
+drop foreign key ClassStudent_ibfk_2,
+drop foreign key ClassStudent_ibfk_1;
 
 alter TABLE Marks
-drop foreign key M_SubjectID,
-drop foreign key M_StudentID;
+drop foreign key Marks_ibfk_2,
+drop foreign key Marks_ibfk_1;
 
 
 /*10 Xoa hoc vien co StudentID la 1*/
